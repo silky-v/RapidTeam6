@@ -10,7 +10,7 @@ html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#fff;line-height:1.6}
 nav{position:fixed;top:0;width:100%;z-index:10;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(5,5,5,.9);backdrop-filter:blur(10px);border-bottom:1px solid #1b1b1b}
 .logo{font-size:1.3rem;font-weight:900;color:#fff;letter-spacing:1px;position:relative}.logo .hero-letter-p,.logo .brand-team{color:#9bdcff}.logo .red-six,h1 .red-six{color:#e53945!important}.pumpkin-mark{position:absolute;width:29px;height:27px;left:-4px;top:-16px;transform:rotate(-16deg);z-index:1}.pumpkin-mark svg{display:block;width:100%;height:100%}
-nav a{color:#ddd;text-decoration:none;margin-left:28px;font-weight:700}
+nav a{color:#ddd;text-decoration:none;margin-left:20px;font-weight:700}.nav-links{display:flex;align-items:center}.menu-toggle{display:none;background:#0d171d;border:1px solid #35505e;color:#9bdcff;border-radius:7px;padding:8px 11px;font-size:1.2rem;line-height:1;cursor:pointer}.menu-toggle:focus-visible,.nav-links a:focus-visible{outline:2px solid #9bdcff;outline-offset:3px}
 nav a:hover{color:#9bdcff}
 #snow-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
 .hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 60px;background:radial-gradient(circle at center,rgba(155,220,255,.13),transparent 38%),#050505;position:relative;overflow:hidden}
@@ -47,7 +47,7 @@ section{padding:90px 7%}
 .join h2{font-size:2.7rem}.join p{color:#999;margin:12px auto 25px;max-width:650px}.email-box{max-width:720px;margin:28px auto 0;padding:24px;text-align:left;background:linear-gradient(145deg,#101c23,#080c0f);border:1px solid rgba(155,220,255,.3);border-radius:16px;box-shadow:0 18px 55px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.04)}.email-box label{display:block;color:#9bdcff;font-size:.82rem;font-weight:800;letter-spacing:1px;margin:0 0 7px}.email-box input,.email-box textarea,.email-box select{width:100%;font:inherit;color:#fff;background:#070a0c;border:1px solid #263943;border-radius:8px;padding:12px 14px;margin-bottom:15px;outline:none}.email-box input:focus,.email-box textarea:focus{border-color:#9bdcff;box-shadow:0 0 0 3px rgba(155,220,255,.12)}.email-box textarea{min-height:100px;resize:vertical}.email-box select{width:100%;font:inherit;color:#fff;background:#070a0c;border:1px solid #263943;border-radius:8px;padding:12px 14px;margin-bottom:15px;outline:none}.email-box select:focus{border-color:#9bdcff;box-shadow:0 0 0 3px rgba(155,220,255,.12)}.email-box .btn{border:0;cursor:pointer}.email-box .email-caption{font-size:.82rem;color:#74848d;margin:0 0 18px}
 footer{border-top:1px solid #171717;padding:25px 7%;display:flex;justify-content:space-between;color:#666;font-size:.9rem}
 footer strong{color:#9bdcff}.footer-brand{display:inline-flex;align-items:center;gap:2px;white-space:nowrap}.footer-brand .footer-pumpkin{width:18px;height:16px;display:inline-block;margin-right:2px}.footer-brand .footer-rapid{color:#fff}.footer-brand .footer-blue{color:#9bdcff}.footer-brand .footer-red{color:#ff303f}
-@media(max-width:750px){nav{padding:15px 5%}nav a{display:none}section{padding:70px 5%}.cards,.services,.bio-grid,.process-grid,.deliverables{grid-template-columns:1fr}footer{flex-direction:column;gap:8px}h1{letter-spacing:-3px}.spiral{width:100vw;height:100vw}.spiral-one{left:-48%;top:-22%}.spiral-two{right:-48%;bottom:-32%}}
+@media(max-width:750px){nav{padding:15px 5%}.menu-toggle{display:grid;place-items:center}.nav-links{display:none;position:absolute;top:100%;left:0;width:100%;padding:12px 5%;background:rgba(5,5,5,.97);backdrop-filter:blur(10px);border-bottom:1px solid #1b1b1b;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a{display:block;margin:0;padding:11px 2px;border-bottom:1px solid #171f23}.nav-links a:last-child{border-bottom:0}section{padding:70px 5%}.cards,.services,.bio-grid,.process-grid,.deliverables{grid-template-columns:1fr}footer{flex-direction:column;gap:8px}h1{letter-spacing:-3px}.spiral{width:100vw;height:100vw}.spiral-one{left:-48%;top:-22%}.spiral-two{right:-48%;bottom:-32%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.spiral,.typewriter-note span[aria-hidden="true"]{animation:none}.strength-meter-fill{transition:none}}
 </style>
 </head>
@@ -55,7 +55,8 @@ footer strong{color:#9bdcff}.footer-brand{display:inline-flex;align-items:center
 
 <nav>
   <div class="logo"><span class="pumpkin-mark" aria-hidden="true"><svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg></span><span class="brand-rapid">RA<span class="hero-letter-p">P</span>ID</span> <span class="brand-team">TEAM</span> <span class="red-six" style="color:#ff303f">6</span></div>
-  <div>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+  <div class="nav-links" id="nav-links">
     <a href="#home">Home</a>
     <a href="#services">Testing</a>
     <a href="#pricing">Pricing</a>
@@ -195,6 +196,26 @@ footer strong{color:#9bdcff}.footer-brand{display:inline-flex;align-items:center
 
 <footer><div>© 2026 <strong class="footer-brand"><svg class="footer-pumpkin" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg><span class="footer-rapid">RA<span class="footer-blue">P</span>ID</span> <span class="footer-blue">TEAM</span> <span class="footer-red">6</span></strong>. All rights reserved.</div><div><span style="color:#fff">SECURE</span> • <span style="color:#9bdcff">TEST</span> • <span style="color:#ff303f">IMPROVE</span></div></footer>
 <script>
+// Toggle the compact mobile navigation.
+(() => {
+  const button = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+  const closeMenu = () => {
+    links.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Open navigation menu');
+    button.textContent = '☰';
+  };
+  button.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    button.textContent = isOpen ? '×' : '☰';
+  });
+  links.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+})();
+
 // Let a few Halloween icons drift through the hero header.
 (() => {
   const canvas = document.getElementById('snow-canvas');
