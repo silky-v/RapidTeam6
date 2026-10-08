@@ -9,10 +9,10 @@
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#fff;line-height:1.6}
 nav{position:fixed;top:0;width:100%;z-index:10;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(5,5,5,.9);backdrop-filter:blur(10px);border-bottom:1px solid #1b1b1b}
-.logo{font-size:1.3rem;font-weight:900;color:#9bdcff;letter-spacing:1px;position:relative}.santa-hat{position:absolute;width:29px;height:27px;left:-4px;top:-16px;transform:rotate(-16deg);z-index:1}.santa-hat svg{display:block;width:100%;height:100%}
+.logo{font-size:1.3rem;font-weight:900;color:#fff;letter-spacing:1px;position:relative}.logo .hero-letter-p,.logo .brand-team{color:#9bdcff}.logo .red-six,h1 .red-six{color:#e53945!important}.pumpkin-mark{position:absolute;width:29px;height:27px;left:-4px;top:-16px;transform:rotate(-16deg);z-index:1}.pumpkin-mark svg{display:block;width:100%;height:100%}
 nav a{color:#ddd;text-decoration:none;margin-left:28px;font-weight:700}
 nav a:hover{color:#9bdcff}
-#snow-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:9;pointer-events:none}
+#snow-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
 .hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 60px;background:radial-gradient(circle at center,rgba(155,220,255,.13),transparent 38%),#050505;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(155,220,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(155,220,255,.04) 1px,transparent 1px);background-size:45px 45px;pointer-events:none}
 .spiral-field{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
@@ -25,14 +25,14 @@ nav a:hover{color:#9bdcff}
 .hero-content{position:relative;z-index:1;max-width:950px}
 .tag{display:inline-block;padding:7px 14px;border:1px solid #9bdcff;color:#9bdcff;border-radius:999px;font-size:.8rem;font-weight:800;letter-spacing:2px;margin-bottom:20px}
 h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.95;font-weight:1000;letter-spacing:-5px}
-h1 span{color:#9bdcff}.hero-title-rapid{position:relative;display:inline-block;color:#fff}.hero-title-hat{position:absolute;width:.48em;height:.42em;left:.1em;top:-.43em;transform:rotate(-16deg);z-index:2}.hero-title-hat svg{display:block;width:100%;height:100%}
+h1 span{color:#9bdcff}.hero-title-rapid{position:relative;display:inline-block;color:#fff}.hero-title-rapid .hero-letter-p{color:#9bdcff}.hero-pumpkin{position:absolute;width:.48em;height:.42em;left:.1em;top:-.43em;transform:rotate(-16deg);z-index:2}.hero-pumpkin svg{display:block;width:100%;height:100%}
 .hero p{margin:25px auto 32px;max-width:700px;color:#aaa;font-size:1.1rem}
 .btn{display:inline-block;background:#9bdcff;color:#050505;padding:14px 25px;border-radius:7px;text-decoration:none;font-weight:900;margin:5px;transition:.2s}
 .btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(155,220,255,.2)}
 .btn.alt{background:transparent;color:#fff;border:1px solid #444}
 section{padding:90px 7%}
 .section-title{text-align:center;margin-bottom:45px}
-.section-title h2{font-size:2.5rem}
+.section-title h2{font-size:2.5rem}.about-logo-rapid{position:relative;display:inline-block;color:#fff}.about-logo-rapid .about-logo-p{color:#9bdcff}.about-logo-rapid .about-pumpkin{position:absolute;width:.48em;height:.42em;left:.08em;top:-.48em}.about-logo-rapid .about-pumpkin svg{display:block;width:100%;height:100%}
 .section-title p{color:#888;margin-top:8px}
 .bio-grid{max-width:1100px;margin:24px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.bio-card{background:linear-gradient(145deg,#0d1113,#090b0c);border:1px solid #1d2a30;border-radius:14px;padding:28px}.bio-card h3{font-size:1.25rem;margin-bottom:5px}.bio-card .role{margin-bottom:15px}.bio-card p{color:#999;margin-top:10px}.bio-card strong{color:#d8e8ef}.process-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.process-step,.deliverable{background:#0d0d0d;border:1px solid #1d2a30;border-radius:14px;padding:24px}.process-step .step-number{color:#9bdcff;font-weight:900;letter-spacing:2px;font-size:.8rem}.process-step h3,.deliverable h3{margin:8px 0}.process-step p,.deliverable p{color:#999}.report-example{max-width:900px;margin:24px auto 0;background:#0b0e10;border:1px solid #26343b;border-radius:14px;padding:26px}.report-example-header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #253139;padding-bottom:16px;margin-bottom:16px}.severity{font-size:.78rem;font-weight:900;color:#ffd58a;border:1px solid #705b30;padding:4px 10px;border-radius:999px;white-space:nowrap}.report-example p{color:#999;margin:8px 0}.deliverables{max-width:1100px;margin:24px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.email-privacy{color:#74848d;font-size:.82rem;margin-top:16px!important}.cards{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:#0d0d0d;border:1px solid #1d1d1d;border-radius:14px;padding:28px;transition:.25s}
@@ -46,16 +46,15 @@ section{padding:90px 7%}
 .pricing-note{max-width:850px;margin:0 auto 28px;text-align:center;color:#999}.typewriter-note{max-width:100%;border:1px solid #1d2b32;border-radius:8px;background:#091015;padding:16px 20px;color:#b9d9e8;margin:24px auto 0;text-align:left;min-height:5.5em}.typewriter-note span[aria-hidden="true"]{border-right:2px solid #9bdcff;padding-right:3px;animation:caret-blink .8s steps(1) infinite}@keyframes caret-blink{50%{border-color:transparent}}.price{color:#9bdcff;font-size:1.35rem;font-weight:900;margin:14px 0 8px}.pricing-card{display:flex;flex-direction:column}.pricing-card p{color:#999}.pricing-card ul{margin:14px 0 0 18px;color:#888}.pricing-card li{margin:6px 0}.join{max-width:900px;margin:auto;text-align:center;background:linear-gradient(135deg,#0d0d0d,#111);border:1px solid #222;border-radius:18px;padding:60px 25px}
 .join h2{font-size:2.7rem}.join p{color:#999;margin:12px auto 25px;max-width:650px}.email-box{max-width:720px;margin:28px auto 0;padding:24px;text-align:left;background:linear-gradient(145deg,#101c23,#080c0f);border:1px solid rgba(155,220,255,.3);border-radius:16px;box-shadow:0 18px 55px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.04)}.email-box label{display:block;color:#9bdcff;font-size:.82rem;font-weight:800;letter-spacing:1px;margin:0 0 7px}.email-box input,.email-box textarea,.email-box select{width:100%;font:inherit;color:#fff;background:#070a0c;border:1px solid #263943;border-radius:8px;padding:12px 14px;margin-bottom:15px;outline:none}.email-box input:focus,.email-box textarea:focus{border-color:#9bdcff;box-shadow:0 0 0 3px rgba(155,220,255,.12)}.email-box textarea{min-height:100px;resize:vertical}.email-box select{width:100%;font:inherit;color:#fff;background:#070a0c;border:1px solid #263943;border-radius:8px;padding:12px 14px;margin-bottom:15px;outline:none}.email-box select:focus{border-color:#9bdcff;box-shadow:0 0 0 3px rgba(155,220,255,.12)}.email-box .btn{border:0;cursor:pointer}.email-box .email-caption{font-size:.82rem;color:#74848d;margin:0 0 18px}
 footer{border-top:1px solid #171717;padding:25px 7%;display:flex;justify-content:space-between;color:#666;font-size:.9rem}
-footer strong{color:#9bdcff}
+footer strong{color:#9bdcff}.footer-brand{display:inline-flex;align-items:center;gap:2px;white-space:nowrap}.footer-brand .footer-pumpkin{width:18px;height:16px;display:inline-block;margin-right:2px}.footer-brand .footer-rapid{color:#fff}.footer-brand .footer-blue{color:#9bdcff}.footer-brand .footer-red{color:#ff303f}
 @media(max-width:750px){nav{padding:15px 5%}nav a{display:none}section{padding:70px 5%}.cards,.services,.bio-grid,.process-grid,.deliverables{grid-template-columns:1fr}footer{flex-direction:column;gap:8px}h1{letter-spacing:-3px}.spiral{width:100vw;height:100vw}.spiral-one{left:-48%;top:-22%}.spiral-two{right:-48%;bottom:-32%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.spiral,.typewriter-note span[aria-hidden="true"]{animation:none}.strength-meter-fill{transition:none}}
 </style>
 </head>
 <body>
-<canvas id="snow-canvas" aria-hidden="true"></canvas>
 
 <nav>
-  <div class="logo"><span class="santa-hat" aria-hidden="true"><svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg"><path d="M9 39C16 32 21 19 31 9c10 11 17 22 22 34L9 39Z" fill="#d62735"/><path d="M8 38c14-5 31-3 47 4l-3 8c-15-6-31-7-46-4l2-8Z" fill="#f7f8fa"/><circle cx="32" cy="9" r="7" fill="#f7f8fa"/></svg></span>RAPID TEAM 6</div>
+  <div class="logo"><span class="pumpkin-mark" aria-hidden="true"><svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg></span><span class="brand-rapid">RA<span class="hero-letter-p">P</span>ID</span> <span class="brand-team">TEAM</span> <span class="red-six" style="color:#ff303f">6</span></div>
   <div>
     <a href="#home">Home</a>
     <a href="#services">Testing</a>
@@ -68,13 +67,14 @@ footer strong{color:#9bdcff}
 </nav>
 
 <header class="hero" id="home">
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
   <div class="spiral-field" aria-hidden="true">
     <div class="spiral spiral-one"><svg viewBox="0 0 500 500"><path d="M250 250 C250 247 255 247 258 250 C264 256 258 265 250 267 C237 270 227 259 228 247 C230 230 246 219 263 223 C286 228 299 251 292 274 C284 302 254 317 226 307 C193 295 176 258 190 225 C207 185 252 168 292 187 C338 208 357 261 333 307 C306 360 241 380 188 351 C128 319 106 243 141 183 C178 116 264 93 331 134 C405 178 430 274 380 350 C326 432 219 459 135 400 C45 338 18 220 81 128 C149 30 277 2 378 74"/><path d="M250 250 C250 247 255 247 258 250 C264 256 258 265 250 267 C237 270 227 259 228 247 C230 230 246 219 263 223 C286 228 299 251 292 274 C284 302 254 317 226 307 C193 295 176 258 190 225 C207 185 252 168 292 187 C338 208 357 261 333 307 C306 360 241 380 188 351 C128 319 106 243 141 183 C178 116 264 93 331 134 C405 178 430 274 380 350 C326 432 219 459 135 400 C45 338 18 220 81 128 C149 30 277 2 378 74" transform="rotate(180 250 250)" opacity=".55"/></svg></div>
     <div class="spiral spiral-two"><svg viewBox="0 0 500 500"><path d="M250 250 C250 247 255 247 258 250 C264 256 258 265 250 267 C237 270 227 259 228 247 C230 230 246 219 263 223 C286 228 299 251 292 274 C284 302 254 317 226 307 C193 295 176 258 190 225 C207 185 252 168 292 187 C338 208 357 261 333 307 C306 360 241 380 188 351 C128 319 106 243 141 183 C178 116 264 93 331 134 C405 178 430 274 380 350 C326 432 219 459 135 400 C45 338 18 220 81 128 C149 30 277 2 378 74"/></svg></div>
   </div>
   <div class="hero-content">
     <div class="tag">COMPUTER SECURITY TESTING</div>
-    <h1><span class="hero-title-rapid">RAPID<svg class="hero-title-hat" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 39C16 32 21 19 31 9c10 11 17 22 22 34L9 39Z" fill="#d62735"/><path d="M8 38c14-5 31-3 47 4l-3 8c-15-6-31-7-46-4l2-8Z" fill="#f7f8fa"/><circle cx="32" cy="9" r="7" fill="#f7f8fa"/></svg></span> <span>TEAM 6</span></h1>
+    <h1><span class="hero-title-rapid">RA<span class="hero-letter-p">P</span>ID<svg class="hero-pumpkin" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg></span> <span>TEAM <span class="red-six" style="color:#ff303f">6</span></span></h1>
     <p>Security testing, vulnerability assessment and defensive research. We help identify weaknesses so systems can be made safer and more resilient.</p>
     <a class="btn" href="#services">OUR SERVICES</a>
     <a class="btn alt" href="#team">MEET THE TEAM</a>
@@ -82,7 +82,7 @@ footer strong{color:#9bdcff}
 </header>
 
 <section id="services">
-  <div class="section-title"><h2>SECURITY TESTING</h2><p>Focused on authorised, responsible security assessment.</p></div>
+  <div class="section-title"><h2>SE<span style="color:#9bdcff">C</span>URITY TE<span style="color:#9bdcff">S</span>TIN<span style="color:#ff303f">G</span></h2><p>Focused on authorised, responsible security assessment.</p></div>
   <div class="services">
     <div class="service"><div class="icon">◈</div><h3>Vulnerability Assessment</h3><p>Identify security weaknesses in authorised systems, applications and networks and document practical remediation steps.</p></div>
     <div class="service"><div class="icon">⌁</div><h3>Security Testing</h3><p>Controlled testing designed to evaluate how well systems withstand realistic security scenarios.</p></div>
@@ -92,7 +92,7 @@ footer strong{color:#9bdcff}
 
 <section id="pricing">
   <div class="section-title">
-    <h2>SECURITY <span style="color:#9bdcff">TESTING</span> PRICES</h2>
+    <h2>SE<span style="color:#9bdcff">C</span>URITY TE<span style="color:#9bdcff">S</span>TIN<span style="color:#9bdcff">G</span> PRICE<span style="color:#ff303f">S</span></h2>
     <p>Clear day rates for authorised assessments and practical security improvements.</p>
   </div>
   <p class="pricing-note">Prices start at <strong>£500 per day</strong> and range up to <strong>£1,800 per day</strong>, depending on scope, number of systems, complexity and reporting needs. We agree the exact scope and price in writing before any testing begins. All work requires written permission from the owner or an authorised representative.</p>
@@ -132,7 +132,7 @@ footer strong{color:#9bdcff}
 </section>
 
 <section id="process">
-  <div class="section-title"><h2>HOW AN ENGAGEMENT WORKS</h2><p>Clear scope, controlled testing and findings your team can act on.</p></div>
+  <div class="section-title"><h2>HO<span style="color:#9bdcff">W</span> AN ENGA<span style="color:#9bdcff">G</span>EMENT WORK<span style="color:#ff303f">S</span></h2><p>Clear scope, controlled testing and findings your team can act on.</p></div>
   <div class="process-grid">
     <article class="process-step"><div class="step-number">01 / SCOPE</div><h3>Plan the assessment</h3><p>We discuss your goals, systems, constraints and timing, then document the assets in scope, exclusions, contacts and written authorisation.</p></article>
     <article class="process-step"><div class="step-number">02 / TEST</div><h3>Assess safely</h3><p>Testing follows the agreed rules of engagement, with checks to limit disruption and protect data. We pause and contact you if an unexpected risk appears.</p></article>
@@ -142,7 +142,7 @@ footer strong{color:#9bdcff}
 </section>
 
 <section id="deliverables">
-  <div class="section-title"><h2>WHAT YOU RECEIVE</h2><p>Each engagement is tailored to the agreed service and scope.</p></div>
+  <div class="section-title"><h2><span style="color:#9bdcff">WHAT</span> YOU <span style="color:#ff303f">RECEIVE</span></h2><p>Each engagement is tailored to the agreed service and scope.</p></div>
   <div class="deliverables">
     <article class="deliverable"><h3>Written scope</h3><p>Agreed assets, test window, exclusions, contacts, safety limits and authorisation before testing begins.</p></article>
     <article class="deliverable"><h3>Prioritised findings</h3><p>A plain-language summary plus technical evidence, impact, severity and remediation guidance for validated issues.</p></article>
@@ -158,7 +158,7 @@ footer strong{color:#9bdcff}
 </section>
 
 <section id="team">
-  <div class="section-title"><h2>THE <span style="color:#9bdcff">TEAM</span></h2><p>Three people. One mission: build safer systems.</p></div>
+  <div class="section-title"><h2>THE <span style="color:#9bdcff">T</span>EA<span style="color:#ff303f">M</span></h2><p>Three people. One mission: build safer systems.</p></div>
   <div class="cards">
     <div class="card"><img class="avatar avatar-photo" src="jason-photo.jpeg" alt="Jason"><h3>Jason</h3><div class="role">SECURITY RESEARCHER</div><p>Coordinates security assessments and focuses on identifying and prioritising risks.</p></div>
     <div class="card"><div class="avatar">02</div><h3>Andy</h3><div class="role">RED TEAMER</div><p>Performs authorised testing and investigates weaknesses in systems and applications.</p></div>
@@ -167,8 +167,8 @@ footer strong{color:#9bdcff}
 </section>
 
 <section id="about">
-  <div class="section-title"><h2>ABOUT <span style="color:#9bdcff">RAPID TEAM 6</span></h2><p>Responsible security testing with a defensive mindset.</p></div>
-  <div class="join"><h2>TEST. <span style="color:#9bdcff">FIND.</span> IMPROVE.</h2><p>Rapid Team 6 is a three-person computer security testing team focused on authorised assessments and responsible research. Our goal is to find security issues before they become serious problems and help make technology safer.</p></div>
+  <div class="section-title"><h2>ABOUT <span class="about-logo-rapid">RA<span class="about-logo-p">P</span>ID<svg class="about-pumpkin" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg></span> <span style="color:#9bdcff">TEAM</span> <span style="color:#ff303f">6</span></h2><p>Responsible security testing with a defensive mindset.</p></div>
+  <div class="join"><h2>TEST. <span style="color:#9bdcff">FIND.</span> <span style="color:#ff303f">IMPROVE.</span></h2><p>Rapid Team 6 is a three-person computer security testing team focused on authorised assessments and responsible research. Our goal is to find security issues before they become serious problems and help make technology safer.</p></div>
   <div class="bio-grid">
     <article class="bio-card">
       <h3>Jason</h3><div class="role">SECURITY RESEARCHER</div>
@@ -191,11 +191,11 @@ footer strong{color:#9bdcff}
   </div>
 </section>
 
-<section id="booking"><div class="join"><h2>BOOK A <span style="color:#9bdcff">SECURITY REVIEW</span></h2><p>Request a scoping call. Tell us what you want reviewed and we’ll use your enquiry to discuss objectives, boundaries, timing and a written scope.</p><form class="email-box" id="contact-form"><label for="review-service">SERVICE</label><select id="review-service" name="service" required><option value="" disabled selected>Select a service</option><option>Website security</option><option>Phone security</option><option>Device security</option><option>Email security</option><option>Social media account security</option><option>Social engineering simulation</option><option>Not sure yet</option></select><label for="review-organisation">ORGANISATION <span style="color:#74848d;font-weight:400">(OPTIONAL)</span></label><input id="review-organisation" name="organisation" type="text" autocomplete="organization" placeholder="Your organisation"><label for="contact-email">YOUR EMAIL</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="contact-message">WHAT WOULD YOU LIKE REVIEWED?</label><textarea id="contact-message" name="message" placeholder="Describe your goals and the systems you own or are authorised to have assessed. Please don’t include passwords or sensitive data." required></textarea><p class="email-caption">Submitting opens your email app with this information ready to send. This webpage does not submit or store the form.</p><p class="email-caption">Testing begins only after written authorisation and an agreed scope.</p><button class="btn" type="submit">✉ &nbsp; REQUEST A SCOPING CALL</button></form></div></section>
+<section id="booking"><div class="join"><h2>BOOK A <span style="color:#9bdcff">SECURITY</span> <span style="color:#ff303f">REVIEW</span></h2><p>Request a scoping call. Tell us what you want reviewed and we’ll use your enquiry to discuss objectives, boundaries, timing and a written scope.</p><form class="email-box" id="contact-form"><label for="review-service">SERVICE</label><select id="review-service" name="service" required><option value="" disabled selected>Select a service</option><option>Website security</option><option>Phone security</option><option>Device security</option><option>Email security</option><option>Social media account security</option><option>Social engineering simulation</option><option>Not sure yet</option></select><label for="review-organisation">ORGANISATION <span style="color:#74848d;font-weight:400">(OPTIONAL)</span></label><input id="review-organisation" name="organisation" type="text" autocomplete="organization" placeholder="Your organisation"><label for="contact-email">YOUR EMAIL</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="contact-message">WHAT WOULD YOU LIKE REVIEWED?</label><textarea id="contact-message" name="message" placeholder="Describe your goals and the systems you own or are authorised to have assessed. Please don’t include passwords or sensitive data." required></textarea><p class="email-caption">Submitting opens your email app with this information ready to send. This webpage does not submit or store the form.</p><p class="email-caption">Testing begins only after written authorisation and an agreed scope.</p><button class="btn" type="submit">✉ &nbsp; REQUEST A SCOPING CALL</button></form></div></section>
 
-<footer><div>© 2026 <strong>Rapid Team 6</strong>. All rights reserved.</div><div>SECURE • <span style="color:#9bdcff">TEST</span> • IMPROVE</div></footer>
+<footer><div>© 2026 <strong class="footer-brand"><svg class="footer-pumpkin" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M28 14C24 8 28 3 37 4L39 15Z" fill="#5d9b43" stroke="#9bdc70" stroke-width="2"/><path d="M32 13C24 8 10 13 8 27C5 41 16 50 31 47C44 51 57 42 56 28C55 14 42 9 32 13Z" fill="#ff8a24" stroke="#ffc05c" stroke-width="2"/><path d="M19 16C14 25 15 39 22 46M32 13C27 23 27 38 31 47M43 15C49 24 47 39 41 46" fill="none" stroke="#db6419" stroke-width="2"/><path d="M20 27L25 21L29 28ZM36 28L40 21L45 27Z" fill="#45212b"/><path d="M21 34Q32 45 44 34L40 41Q32 45 25 40Z" fill="#45212b"/></svg><span class="footer-rapid">RA<span class="footer-blue">P</span>ID</span> <span class="footer-blue">TEAM</span> <span class="footer-red">6</span></strong>. All rights reserved.</div><div><span style="color:#fff">SECURE</span> • <span style="color:#9bdcff">TEST</span> • <span style="color:#ff303f">IMPROVE</span></div></footer>
 <script>
-// Draw a light, pointer-free snowfall over the page.
+// Let a few Halloween icons drift through the hero header.
 (() => {
   const canvas = document.getElementById('snow-canvas');
   const context = canvas.getContext('2d');
@@ -203,7 +203,7 @@ footer strong{color:#9bdcff}
   if (reducedMotion || !context) return;
   let width = 0;
   let height = 0;
-  let flakes = [];
+  let halloweenIcons = [];
   const resize = () => {
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
     width = window.innerWidth;
@@ -211,24 +211,31 @@ footer strong{color:#9bdcff}
     canvas.width = width * ratio;
     canvas.height = height * ratio;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    flakes = Array.from({length: Math.min(90, Math.ceil(width / 14))}, () => ({
+    const icons = ['🎃', '👻', '🦇', '🍬'];
+    halloweenIcons = Array.from({length: Math.min(28, Math.max(12, Math.ceil(width / 48)))}, () => ({
       x: Math.random() * width, y: Math.random() * height,
-      radius: 1 + Math.random() * 2.2, speed: .45 + Math.random() * 1.1,
-      drift: (Math.random() - .5) * .55, phase: Math.random() * Math.PI * 2
+      size: 15 + Math.random() * 9, speed: .35 + Math.random() * .75,
+      drift: (Math.random() - .5) * .55, phase: Math.random() * Math.PI * 2,
+      glyph: icons[Math.floor(Math.random() * icons.length)]
     }));
   };
   const draw = time => {
     context.clearRect(0, 0, width, height);
-    context.fillStyle = 'rgba(225,245,255,.75)';
-    flakes.forEach(flake => {
-      flake.y += flake.speed;
-      flake.x += flake.drift + Math.sin(time / 900 + flake.phase) * .35;
-      if (flake.y > height + 4) { flake.y = -4; flake.x = Math.random() * width; }
-      if (flake.x < -4) flake.x = width + 4;
-      if (flake.x > width + 4) flake.x = -4;
-      context.beginPath();
-      context.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-      context.fill();
+    halloweenIcons.forEach(icon => {
+      icon.y += icon.speed;
+      icon.x += icon.drift + Math.sin(time / 900 + icon.phase) * .35;
+      if (icon.y > height + 24) { icon.y = -24; icon.x = Math.random() * width; }
+      if (icon.x < -24) icon.x = width + 24;
+      if (icon.x > width + 24) icon.x = -24;
+      context.save();
+      context.translate(icon.x, icon.y);
+      context.rotate(Math.sin(time / 1400 + icon.phase) * .12);
+      context.font = `${icon.size}px sans-serif`;
+      context.textAlign = 'center';
+      context.textBaseline = 'middle';
+      context.globalAlpha = .82;
+      context.fillText(icon.glyph, 0, 0);
+      context.restore();
     });
     window.requestAnimationFrame(draw);
   };
@@ -247,7 +254,7 @@ document.getElementById('contact-form').addEventListener('submit', event => {
   const message = form.elements.message.value;
   const subject = encodeURIComponent(`Security review enquiry: ${service}`);
   const body = encodeURIComponent(`Service: ${service}\nOrganisation: ${organisation}\n\nReview goals and scope:\n${message}\n\nReply to: ${sender}\n\nI would like to arrange a scoping call.`);
-  window.location.href = `mailto:dsasejas@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
 });
 
 // Reveal the engagement note one character at a time.
